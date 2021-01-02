@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglogin"
+    tools:context=".register">
+
+    <ProgressBar
+        android:id="@+id/regn_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/add_image_layout_accnt"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginEnd="131dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regn_progress_bar">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/regn_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_account_circle_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_img_regn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:backgroundTint="@color/cardview_light_background"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/accnt_image"
+            app:layout_constraintTop_toBottomOf="@+id/accnt_image"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_baseline_add_a_photo_24" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_image_layout_accnt">
+
+        <TextView
+            android:id="@+id/status_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Hi! Let's start a gossip."
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="306dp" />
+
+        <ImageView
+            android:id="@+id/status_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_baseline_edit_24"
+            tools:layout_editor_absoluteX="353dp"
+            tools:layout_editor_absoluteY="306dp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <EditText
+        android:id="@+id/regn_name_txt"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/round_txt_view"
+        android:ems="10"
+        android:hint="Display name"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat2" />
+
+    <EditText
+        android:id="@+id/regn_email_txt"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/round_txt_view"
+        android:ems="10"
+        android:hint="Enter your Email-ID"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regn_name_txt" />
+
+    <EditText
+        android:id="@+id/regn_password_txt"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/round_txt_view"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingHorizontal="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regn_email_txt" />
+
+    <Button
+        android:id="@+id/regn_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="197dp"
+        android:background="@drawable/round_btn"
+        android:paddingHorizontal="10dp"
+        android:shadowColor="#000000"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="4"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regn_password_txt" />
+
+    <ImageView
+        android:id="@+id/show_regn_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/regn_password_txt"
+        app:layout_constraintEnd_toStartOf="@+id/regn_password_txt"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toEndOf="@+id/regn_password_txt"
+        app:layout_constraintTop_toBottomOf="@+id/regn_password_txt"
+        app:srcCompat="@drawable/ic_remove_red_eye_black_24dp"
+        tools:layout_editor_absoluteX="324dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

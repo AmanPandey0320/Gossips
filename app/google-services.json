@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "769499628638",
+    "firebase_url": "https://gossips-145b5.firebaseio.com",
+    "project_id": "gossips-145b5",
+    "storage_bucket": "gossips-145b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769499628638:android:be2d937b62716f9692a0cf",
+        "android_client_info": {
+          "package_name": "com.example.gossips"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769499628638-k8psv3ml807f73g5qn68v197hsq5brcb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gossips",
+            "certificate_hash": "8fc149642e809120a95c52fd35ddf509b6b014f0"
+          }
+        },
+        {
+          "client_id": "769499628638-jk7q981h9pf94u1orcir15g180tm3vgs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArwnxtZRPES5aB1iwNhXZFXNUtZXN-_gA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769499628638-jk7q981h9pf94u1orcir15g180tm3vgs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
